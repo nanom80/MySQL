@@ -7,12 +7,12 @@ show columns from employees;
 -- 주석
 /* 주석 */
 
-select * from countries;		-- 나라
+select * from countries;	-- 나라
 select * from departments;	-- 부서
-select * from employees;		-- 직원
+select * from employees;	-- 직원
 select * from job_history;	-- 업무현황
-select * from jobs;			-- 업무
-select * from locations;		-- 도시
+select * from jobs;		-- 업무
+select * from locations;	-- 도시
 select * from regions;		-- 지역
 
 select	employee_id as '사번',
