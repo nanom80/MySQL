@@ -164,7 +164,7 @@ order by
 select
     first_name,
     salary,
-    concat(substr(phone_number,1,3),'-',substr(phone_number,5,3),'-',substr(phone_number,9)) phone_number,
+    replace(phone_number,'.','-') phone_number,
     hire_date
 from
     employees
