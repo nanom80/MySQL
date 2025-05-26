@@ -1,3 +1,7 @@
+/* 2025-05-23 */
+
+use hr_db;
+
 desc employees;
 
 select	first_name, department_id
