@@ -245,8 +245,8 @@ select format(1234567.89,2),
 select first_name,
         commission_pct,
         ifnull(commission_pct,'없음'),
-        case when employee_id > 200 then 'Y' else 'N' end aa,
-        if (employee_id > 200,'Y','N') bb,
+        case when employee_id > 200 then 'Y' else 'N' end a,
+        if (employee_id > 200,'Y','N') b,
         a.*
 from employees a
 ;
