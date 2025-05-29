@@ -66,7 +66,7 @@ select
     c.job_title
 from
     employees a
-    left outer join departments b
+    left join departments b
         on a.department_id = b.department_id
     join jobs c
         on a.job_id = c.job_id
@@ -251,9 +251,9 @@ select
     c.first_name as manager_first_name
 from
     employees a
-    left outer join departments b
+    left join departments b
         on a.department_id = b.department_id
-    left outer join employees c
+    left join employees c
         on a.manager_id = c.employee_id
 -- ) a
 ;
@@ -274,7 +274,7 @@ select
     c.first_name as manager_first_name
 from
     employees a
-    left outer join departments b
+    left join departments b
         on a.department_id = b.department_id
     join employees c
         on a.manager_id = c.employee_id
