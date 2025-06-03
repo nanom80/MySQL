@@ -18,8 +18,7 @@ select user(); -- USER(): 클라이언트가 인증에 사용한 계정.
 select current_user(); -- 현재 세션에서 사용되는 계정(권한 기준 계정)
 
 -- 현재 세션의 트랜잭션 상태 확인(root)
-SELECT * FROM information_schema.innodb_trx;
-
+select * from information_schema.innodb_trx;
 */
 
 
@@ -30,7 +29,7 @@ SELECT * FROM information_schema.innodb_trx;
 -- 모든 곳에서 접속 가능
 create user 'web'@'%' identified by '1234';
 
--- localhost 에서만 접속가능
+-- localhost 에서만 접속가능(내 컴퓨터에서는 이 계정 사용)
 create user 'web'@'localhost' identified by '1234';
 
 -- 192.168.0.122 에서만 접속가능
